@@ -10,7 +10,7 @@ jobs:
           UNITY_LICENSE: ${{secrets.UNITY_LICENSE}}
         with:
           targetPlatform: WebGL
-          projectPath: My Project
+          projectPath: My project
       - uses: JamesIves/github-pages-deploy-action@4.1.3
         with:
           branch: gh-pages
