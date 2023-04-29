@@ -10,11 +10,12 @@ jobs:
           UNITY_LICENSE: ${{secrets.UNITY_LICENSE}}
         with:
           targetPlatform: WebGL
+          projectPath: My Project
       - uses: JamesIves/github-pages-deploy-action@4.1.3
         with:
           branch: gh-pages
           folder: build
-          target-folder: My Project
+          target-folder: .
       - uses: actions/upload-artifact@v2
         with:
           name: Build
